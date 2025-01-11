@@ -58,7 +58,7 @@
   /* border: 2px solid orange; */
   max-width: 50%;
 
-  margin:80px 100px;
+  margin: 80px 100px;
 }
 .hero-title {
   font-size: 2rem;
@@ -79,30 +79,63 @@
 /* Hero page end hear */
 
 /* start second page hear */
-.seccond-container{
-  max-width: 1280px;
+.second-container {
+  max-width:80%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
   margin-top: 150px;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
   
 }
-.card{
- /* border: 2px solid red; */
- background-color: rgb(255, 255, 255);
- box-shadow: 0px 4px 30px  rgba(14, 14, 14, 0.15);;
- /* gap: 25px; */
- padding: 10px;
- margin: 20px;
- border-radius: 8px;
-
+.second-title{
+  /* color: green;
+  border: 2px solid red; */
 }
 .card-container{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+.card {
+  /* border: 2px solid red; */
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 30px rgba(14, 14, 14, 0.15);
+  /* gap: 25px; */
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.card-container {
   /* display: grid;
   grid-template-columns: repeat(4,1fr); */
 }
 
-
 /* end second page hear */
+
+
+/* start third page */
+
+.third-container{
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 150px;
+  border: 2px solid red;
+}
+.thrd-card-container{
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 32px;
+}
+.third-card{
+  background-color: rgba(84, 144, 245, 0.2);;
+  padding: 32px;
+  border-radius: 8px;
+  /* border: 2px solid green; */
+
+}
+.third-btn{
+  color: aliceblue;
+  padding: 5px;
+  background-color: rgb(84, 144, 245);
+  border-radius: 5px;
+  border: none;
+}
+/* end third page */
