@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.fira-sans-thin {
+  font-family: "Fira Sans", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* navbar start hear */
+.head-container {
+  max: width 100%;
+  min-height: 100px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+}
+.head-content {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-titel {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.header-btn {
+  width: 115px;
+  height: 50px;
+  border: 1px solid green;
+  border-radius: 8px;
+  color: green;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* navbar end hear */
+
+/* Hero page start hear */
+.hero-container {
+  /* border: 2px solid red; */
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  border-radius: 8px;
+  background-color: rgb(198, 228, 214);
+}
+.hero-title-container {
+  /* border: 2px solid orange; */
+  max-width: 50%;
+
+  margin-left: 100px;
+}
+.hero-img-container {
+  /* border: 2px solid orange; */
+  max-width: 50%;
+
+  margin:80px 100px;
+}
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.hero-mini-title {
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(14, 14, 14, 0.5);
+}
+.hero-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: rgb(0, 106, 80);
+  color: rgb(255, 255, 255);
+}
+/* Hero page end hear */
+
+/* start second page hear */
+.seccond-container{
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  
+}
+.card{
+ /* border: 2px solid red; */
+ background-color: rgb(255, 255, 255);
+ box-shadow: 0px 4px 30px  rgba(14, 14, 14, 0.15);;
+ /* gap: 25px; */
+ padding: 10px;
+ margin: 20px;
+ border-radius: 8px;
+
+}
+.card-container{
+  /* display: grid;
+  grid-template-columns: repeat(4,1fr); */
+}
+
+
+/* end second page hear */
