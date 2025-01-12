@@ -40,32 +40,36 @@
 .hero-container {
   /* border: 2px solid red; */
   max-width: 80%;
+  min-height: 80vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 50px;
-  border-radius: 8px;
+  justify-content: space-evenly;
+  border-radius: 24px;
+
+  /* border-radius: 8px; */
   background-color: rgb(198, 228, 214);
 }
 .hero-title-container {
   /* border: 2px solid orange; */
-  max-width: 50%;
-
-  margin-left: 100px;
 }
 .hero-img-container {
   /* border: 2px solid orange; */
-  max-width: 100%;
+  /* width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
 
-  margin: 80px 100px;
+  /* margin: 80px 100px; */
 }
 .hero-title {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+
 }
 .hero-mini-title {
-  font-size: 24px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: rgba(14, 14, 14, 0.5);
 }
@@ -75,6 +79,10 @@
   border-radius: 8px;
   background-color: rgb(0, 106, 80);
   color: rgb(255, 255, 255);
+  border: none;
+}
+.hero-btn:hover{
+background-color: rgb(23, 51, 90);
 }
 /* Hero page end hear */
 
@@ -170,7 +178,6 @@
   /* border: 2px solid red; */
   max-width: 80%;
   margin: 0 auto;
-
 }
 .four-container-card {
   display: flex;
@@ -180,17 +187,17 @@
   border-radius: 20px;
   margin-bottom: 24px;
 }
-.four-img-1{
-  max-width: 100%;
+.four-img-1 {
+  max: width 408px;
   padding: 25px;
-  /* border: 5px solid red; */
+  border: 5px solid red;
   border-radius: 8px;
 }
 .four-description {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 15px;
   max-width: 100%;
-  margin:15px;
+  margin: 15px;
 }
 .four-btn {
   width: 139px;
@@ -200,3 +207,115 @@
   background-color: rgb(0, 106, 80);
 }
 /* end four number page */
+
+/* five number page start hear */
+.five-container {
+  max-width: 80%;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+.five-titel {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.five-card-container {
+  max-width: 1070px;
+  /* border: 2px solid blue; */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  padding: 50px;
+}
+.five-card {
+  max-width: 240px;
+  text-align: center;
+  /* border: 2px solid red; */
+  border-radius: 8px;
+  padding: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 30px rgb(220, 198, 198);
+}
+.five-card-two {
+  max-width: 240px;
+  text-align: center;
+  /* border: 2px solid red; */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 4px 30px rgb(220, 198, 198);
+  background-color: rgb(198, 228, 214);
+}
+.five-description {
+  max-width: 1032px;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.five-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+.five-btn {
+  /* border: 1px solid rgba(14, 14, 14, 0.1); */
+  padding: 15px 30px 15px 30px;
+  background-color: rgb(0, 106, 80);
+  color: white;
+  border-radius: 8px;
+}
+/* five number page end hear */
+
+/* responsive for mobile */
+@media screen and (max-width: 576px) {
+  .head-content,
+  .hero-container,
+  .four-container-card {
+    flex-direction: column;
+  }
+
+  .header-btn {
+    margin-bottom: 10px;
+  }
+  .hero-title-container {
+    /* margin-top: 15px;
+    margin-right: 30px; */
+    text-align: center;
+  }
+  .hero-container {
+    width: 100%;
+  }
+
+  .card-container,
+  .thrd-card-container,
+  .five-card-container {
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .hero-container {
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 990px) {
+  .hero-container {
+    /* max-width: 100%; */
+    flex-direction: column;
+  }
+  .card-container,
+  .thrd-card-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .five-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
